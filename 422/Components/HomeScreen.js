@@ -12,6 +12,9 @@ import {
 } from 'react-native';
 import Slider from '../Components/Slider';
 import Categorycontainer from '../HomeContainer/Categorycontainer'
+import Snackcontainer from '../HomeContainer/Snackcontainer'
+import Noodlecontainer from '../HomeContainer/Noodlecontainer'
+import Lunchcontainer from '../HomeContainer/Lunchcontainer'
 import Topsalecontainer from '../HomeContainer/Topsalecontainer'
 // import Navbar from './Navbar'
 
@@ -54,13 +57,39 @@ export default class HomeScreen extends React.Component {
 
                     <View style={styles.categorycontainer}>
                         <View style={styles.titlebigcontainer}>
-                            <Text style={styles.titletext}>Drink</Text>
+                            <Text style={styles.titletext}>Snack</Text>
                         </View>
                         <ScrollView
                             horizontal={true}
                             showsHorizontalScrollIndicator={true}>
 
-                            <Categorycontainer />
+                            <Snackcontainer />
+
+                        </ScrollView>
+                    </View>
+
+                    <View style={styles.categorycontainer}>
+                        <View style={styles.titlebigcontainer}>
+                            <Text style={styles.titletext}>Instant noodle</Text>
+                        </View>
+                        <ScrollView
+                            horizontal={true}
+                            showsHorizontalScrollIndicator={true}>
+
+                            <Noodlecontainer />
+
+                        </ScrollView>
+                    </View>
+
+                    <View style={styles.categorycontainer}>
+                        <View style={styles.titlebigcontainer}>
+                            <Text style={styles.titletext}>Lunch box</Text>
+                        </View>
+                        <ScrollView
+                            horizontal={true}
+                            showsHorizontalScrollIndicator={true}>
+
+                            <Lunchcontainer />
 
                         </ScrollView>
                     </View>
